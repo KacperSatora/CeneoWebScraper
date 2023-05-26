@@ -5,7 +5,7 @@ from app import app
 def index():
     return " Hello Kacper Satora"
 
-@app.route('/name/',defaults={'name': None})
+@app.route('/name/',defaults={'name': "Anonim"})
 @app.route('/name/<name>')
-def name(name=None):
-    return f"Hello {name}"
+def name(name):
+    return f"Hello, {name}!"

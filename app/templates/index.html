@@ -16,32 +16,43 @@
 </head>
 
 <body>
-    <header class="container">
-        <h1 class="text-center">
-            temp
-        </h1>
-
-        <h2 class="text-end">
-            Ceneo WebScraper
-        </h2>
-    </header>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-3">
-
-                <div class="list-group">
-                    <a class="list-group-item list-group-item-primary">Strona Główna</a>
-                    <a href="index.html" class="list-group-item list-group-item-action">Strona Główna</a>
-                    <a href="s1.html" class="list-group-item list-group-item-action">Ekstrakcja Opinii</a>
-                    <a href="s2.html" class="list-group-item list-group-item-action">Lista produktów</a>
-                    <a href="s3.html" class="list-group-item list-group-item-action">Strona Główna</a>
-                    <a href="s4.html" class="list-group-item list-group-item-action">O autorze</a>
-                </div>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ceneo WebScraper</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="./index.html">Strona Główna</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./s1.html">Ekstrakcja Opinii</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./s2.html">Lista Produktów</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./s3.html">O Autorze</a></li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
 
+    <!--Main body content-->
+
+    <div class="container">
+        <div class="text-center mt-5">
+            <h1>Cel</h1>
+            <p class="lead">Przejrzyste pokazanie wad, zalet produktu którym jesteśmy zainteresowani</p>
+            <h1>Proces działania</h1>
+            <p class="le">Odsyła do scrapera id danego produktu i prezentuje dane w ułożony sposób</p>
+            <h1>Użyte biblioteki</h1>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-light">BeautifulSoup4</li>
+                <li class="list-group-item list-group-item-light">Pandas</li>
+                <li class="list-group-item list-group-item-light">Numpy</li>
+                <li class="list-group-item list-group-item-light">Matplotlib</li>
+                <li class="list-group-item list-group-item-light">Flask</li>
+            </ul>
+            <h1>Zastosowane podejścia</h1>
+        </div>
+    </div>
 </body>
 
 </html>

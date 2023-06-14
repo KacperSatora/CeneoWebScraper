@@ -1,5 +1,12 @@
 {% extends 'base.html' %}
 {% block title %}Opinie o produkcie{% endblock %}
+{% block script %}
+<script>
+    $(document).ready(function () {
+        $('#opinions').DataTable();
+    });
+</script>
+{% endblock %}
 {% block content %}
 <table id='opinions' class="table table-striped table-warning">
     <thead>
